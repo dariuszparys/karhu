@@ -1,9 +1,0 @@
-C:\Work\Projects\karhu-fork\Karhu.Backend\obj\Debug\ResolveAssemblyReference.cache
-C:\Work\Projects\karhu-fork\Karhu.Backend\bin\Karhu.Backend.Contracts.dll
-C:\Work\Projects\karhu-fork\Karhu.Backend\bin\Karhu.Backend.Contracts.pdb
-C:\Work\Projects\karhu-fork\Karhu.Backend\bin\Karhu.Backend.dll
-C:\Work\Projects\karhu-fork\Karhu.Backend\bin\Karhu.Backend.pdb
-C:\Work\Projects\karhu-fork\Karhu.Backend\bin\EntityFramework.dll
-C:\Work\Projects\karhu-fork\Karhu.Backend\bin\EntityFramework.xml
-C:\Work\Projects\karhu-fork\Karhu.Backend\obj\Debug\Karhu.Backend.dll
-C:\Work\Projects\karhu-fork\Karhu.Backend\obj\Debug\Karhu.Backend.pdb
