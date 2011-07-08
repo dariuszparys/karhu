@@ -1,0 +1,36 @@
+<form class="newForm" method="POST" action="#/products">
+  <p>
+    <label for="product_name">{{?name}}</label>
+    <input type="text" name="product[name]" id="product_name" class="text store_change" value="{{name}}" />
+  </p>
+
+  <p>
+    <label for="product_description">{{?description}}</label>
+    <textarea name="product[description]" id="product_description" class="store_change">{{description}}</textarea>
+  </p>
+  
+  <p>
+    <label for="product_unit_price">{{?price}}</label>
+    <input type="text" name="product[unit_price]" id="product_unit_price" class="text store_change" value="{{unit_price}}" />
+  </p>
+
+  <p class="text">
+    <label for="product_valid_to">{{?valid_to}}</label>
+    <input type="text" name="product[valid_to]" id="product_valid_to" class="datepicker store_change" value="{{valid_to}}" />
+  </p>
+
+  <p>
+    <label for="product_category_id">{{?category}}</label>
+    <select id="product_category_id" name="product[category_id]" class="store_change">
+      <option value="null">{{?no_category_selected}}</option>
+      {{#categories}}
+        <option value="{{id}}" {{#selected}} selected="selected"{{/selected}}>{{name}}</option>
+      {{/categories}}
+    </select>
+  </p>  
+  
+  <p>
+    <input type="submit" value="{{?add_product}}" data-key="enter" data-ctrl-key="true" />
+    <input type="submit" value="{{?cancel}}" class="cancel" data-key="esc" />
+  </p>
+</form>

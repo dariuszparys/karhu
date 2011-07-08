@@ -1,3 +1,7 @@
+# About this fork
+
+The intent of this fork is to provide an easier way for ASP.NET developers to work with this project.
+
 #Products data management as HTML5 Web App
 
 This is a basic business-oriented application which catalogues products and divides them into categories. Those categories as well as the products can be created, updated and deleted. In addition to this typical CRUD approach, there are other standard tasks that will be handled: internationalization, validation of input and controlling the application via the keyboard. One of the most important aspects of the app is that it will use HTML5 local storage in order to allow offline editing.

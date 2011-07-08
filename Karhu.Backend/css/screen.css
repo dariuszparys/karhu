@@ -1,0 +1,631 @@
+/*
+
+oocss modules
+
+*/
+
+html {
+  background: url(/images/tile2.gif) repeat 0 0;
+  overflow-x:hidden;
+}
+.whiteBg {
+  border-top: 1px solid rgb(218,218,218);
+}
+.modHeaderBg {
+  background: url(/images/tile1.gif) repeat 0 0;
+}
+.modHeader h1 {
+  color:transparent;
+  font-size:0px;
+  position:relative;
+  float:left;
+}
+.modHeader h1 a {
+  background: url(/images/logo.png) no-repeat 0 0;
+  height: 186px;
+  width: 186px;
+  display:block;
+  position:absolute;
+  top: 22px;
+  z-index:99;
+}
+.headerBottomBg {
+  background: url(/images/headerBottomBg.png) repeat-x 0 top;
+  padding-top: 36px;
+}
+.modHeader nav {
+  float:right;
+  margin: 108px 0 4px 218px;
+}
+.modHeader nav a {
+  font-family: futura-pt,sans-serif;
+  color: rgba(255,255,255,1);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.33);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height:2;
+  /*filter: 
+    Shadow(Color=#666666,
+		Direction=135, 
+		Strength=1);*/
+}
+.modHeader nav a:hover {
+  border-bottom: 2px solid rgb(255,102,102);
+}
+.modMainNav {
+  padding: 24px 0 24px;
+}
+.modMainNav nav {
+  width:734px;
+  float:right;
+}
+.modMainNav li {
+  float:right;
+  margin-left: 36px;
+}
+.modMainNav nav a {
+  font-family: futura-pt,sans-serif;
+  color: rgb(0,0,0);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 42px;
+  display:block;
+  position:relative;
+}
+.modMainNav nav a:hover:after,
+.productView nav .products:after,
+.categoryView nav .categories:after,
+.queueView nav .categories:after {
+  position:absolute;
+  border: 20px solid transparent;
+  border-bottom-color: rgb(255,102,102);
+  content:"";
+  bottom: -24px;
+  left:40%;
+}
+.modMainNav nav a.products:after {
+  
+}
+
+.addAction {
+  width:186px;
+  float:left;
+}
+.addAction a.button {
+  margin-left: 12px;
+}
+
+.redBordered {
+  border: 20px solid rgb(255,102,102);
+  border-left:0;
+  border-right:0;
+  background-color:rgba(255,255,255,0.66);
+  padding: 36px 0;
+}
+
+
+.main {
+  position:relative;
+}
+
+.newForm {
+  width: 680px;
+  float:right;
+  padding:0;
+}
+.newForm label {
+  width: 150px;
+}
+.newForm input {
+  width: 518px;
+}
+.newForm select {
+  margin-top:15px;
+  font-family: futura-pt,sans-serif;
+  font-size: 12px;
+}
+.newForm textarea {
+  outline:0;
+  border:0;
+  border-bottom: 1px solid rgb(0,0,0);
+  width: 518px;
+  padding:6px;
+  height: 24px;
+}
+
+.main input[type="submit"] {
+  width: auto;
+  float:right;
+  display:inline-block;
+  margin-left: 12px;
+  font-family: futura-pt,sans-serif;
+  font-size: 12px;
+  line-height:2;
+  font-weight: 700;
+  text-transform:lowercase;
+  border:0;
+  color:#fff;
+  background-color: rgba(255,102,102,0.5);
+}
+.main input[type="submit"]:hover {
+  background-color: rgb(255,102,102);
+  cursor:pointer;
+}
+
+.actionContainer form,
+.login_form input {
+  width:679px;
+}
+
+.login_form {
+  padding-left: 68px;
+  overflow: hidden;
+}
+
+.main input,
+.main label {
+  margin-bottom: 24px;
+  
+}
+label.error {
+  float:left;
+  color:rgb(255,102,102);
+  font-size:12px;
+}
+
+.main label {
+  float:left;
+  font-family: futura-pt,sans-serif;
+  font-weight: 700;
+  text-transform:lowercase;
+  padding: 12px 0 0 0;
+}
+.main input {
+  float:left;
+}
+
+.login_form label,
+.search label {
+  width: 150px;
+}
+.search {
+  float:right;
+  width:550px;
+}
+.search span {
+  display:inline-block;
+  width:88px;
+  text-align:right;
+  margin-right: 12px;
+  font-weight: 400px;
+  font-size: 12px;
+  line-height:1;
+}
+.search input {
+  width: 434px;
+  padding-top:0;
+  padding-bottom:0;
+}
+form input {
+  padding: 6px;
+  border-bottom: 1px solid rgb(0,0,0);
+}
+
+
+
+.main p {
+  overflow: hidden;
+}
+.login_form input.ui-button {
+  float:right;
+  width:auto;
+  margin:0;
+  color: rgb(255,255,255);
+  /*width: 28px;*/
+  width:auto;
+  height: 28px;
+  background-color:rgb(0,0,0);
+}
+.login_form input.ui-button:hover {
+  cursor:pointer;
+}
+
+.main h2 {
+  font-family: futura-pt,sans-serif;
+  font-weight: 400;
+  position:relative;
+  top:-116px;
+  width: 186px;
+  text-align:center;
+}
+.marker:after,
+.main h2:after {
+  content:"";
+  position:relative;
+  border: 20px solid transparent;
+  border-bottom-color: rgb(255,102,102);
+}
+.marker:after,
+.main h2:after {
+  top:19px;
+  right:30px;
+}
+
+.actions {
+  min-width: 235px;
+  vertical-align: top;
+  overflow:hidden;
+}
+.actions .floater {
+  float:right;
+}
+
+.button {
+  position:relative;
+  color:rgb(0,0,0);
+  font: 14px/1.5 futura-pt;
+  font-weight:700;
+  cursor:pointer;
+  margin-left: 24px;
+  float:left;
+  text-transform:lowercase;
+  display:block;
+}
+
+.button:hover span,
+input.theButton:hover {
+  border-bottom: 2px solid rgb(0,0,0);
+}
+.button:after {
+  background-color: rgba(255,102,102,0.5);
+  color:rgb(255,255,255);
+  width:28px;
+  height:28px;
+  position:relative;
+  font-size: 18px;
+  text-align:center;
+  display:inline-block;
+}
+a.button:after {
+  left:5px;
+}
+.button:hover:after {
+  background-color:rgb(255,102,102);
+}
+.button.actionEdit:after {
+  content: "/";
+}
+.button.actionDel:after {
+  content: "—";
+}
+.addAction .button:after {
+ content:"+"; 
+}
+
+.actions form {
+  padding: 0;
+  margin: 0 0 0 24px;
+}
+input.theButton {
+  color:rgb(0,0,0);
+  font: 14px/1.5 futura-pt,sans-serif;
+  font-weight:700;
+  cursor:pointer;
+  background-color:transparent;
+  margin:0;
+  line-height:1.5;
+  float:none;
+  padding:0;
+  border:0;
+}
+
+
+a {
+  color: #9F9983;
+}
+
+
+#languages {
+  /*position: absolute;*/
+  top: 1em;
+  right: 2.5em;
+}
+
+#languages li {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+
+#header {
+  margin-bottom: 3em;
+}
+
+#header nav li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.categories li {
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom: solid 1px #DDDDDD;
+}
+
+label {
+  display: block;
+}
+
+#flash {
+  width: 920px;
+  display: none;
+  position: fixed;
+  padding: 59.5px 0;
+  font-weight: 300;
+  color: #FFF;
+  font-size: 42px;
+  background-color: rgb(255,102,102);
+  z-index:98;
+  text-align:right;
+  top:0;
+  border: 9000px solid rgb(255,102,102);
+  border-top:0;
+  border-bottom:0;
+  left:-8830px;
+}
+#flash {
+}
+
+table {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+
+table tr {
+  border-bottom: solid 1px #DDDDDD;
+}
+
+
+table td {
+  padding: 24px 12px;
+  vertical-align: top;
+  font: normal 14px/1.5 georgia,serif;
+  color:#333333;
+  background-color:rgba(255,255,255,0.33);
+}
+table td {
+  text-align: left;
+}
+.description_column {
+  font-style:italic;
+}
+table th {
+  vertical-align:top;
+  padding: 24px 12px;
+  border-top: 1px solid rgb(218,218,218);
+  border-bottom: 1px solid rgb(218,218,218);
+  background-color:rgb(255,255,255);
+  color: rgb(0,0,0);
+  font-size: 12px;
+  text-transform:lowercase;
+  font-weight: 700;
+  font-style:normal !important;
+}
+th.action_column {
+  text-align:right;
+  font-weight:400;
+}
+table th a {
+  position:relative;
+  display:block;
+  color:inherit;
+  text-transform:inherit;
+  font-weight:inherit;
+  font-style:inherit;  
+}
+table th a:after {
+  content:"";
+  position:relative;
+  border: 5px solid transparent;
+  top:10px;
+  left:2px;
+}
+table .selected {
+  background-color:rgba(255,102,102,0.033);
+}
+table th a:hover:after,
+table th.selected a:after {
+  border-top-color: rgb(0,0,0);
+}
+
+.bottomBorder {
+  
+}
+
+
+
+input {
+  outline:0;
+  border:0;
+}
+
+#header .cached-actions {
+  display: none;
+}
+
+ul.cached_actions_list li {
+  padding: 5px;
+  font-size: 18px;
+  border-bottom: solid 1px #DDDDDD;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.controls {
+  overflow: hidden;
+  padding: 0 24px;
+  font: 400 12px/1.5 futura-pt,sans-serif;
+  text-transform:lowercase;
+  margin-bottom: 24px;
+}
+.controls .pages,
+.pagination {
+  float:right;
+}
+.pages {
+  line-height:2;
+}
+.pagination {
+  margin-right: 12px;
+}
+.pagination li {
+  display: inline-block;
+}
+.pagination li a {
+  color:rgb(255,255,255);
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  height: 28px;
+  width: 28px;
+  text-align:center;
+  display:block;
+  line-height:2;
+  background-color:rgba(255,102,102,0.5);
+}
+.pagination li a:hover {
+  background-color:rgb(255,102,102);
+}
+
+.main {
+  /*position: relative;*/
+}
+
+#facebox {
+  padding-bottom: 3em;
+  z-index: 999;
+}
+#facebox h3 {
+  font-size: 42px;
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+
+#facebox .info {
+  float: left;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 1em;
+}
+
+#facebox .info li {
+  text-align: left;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+#facebox .info span {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-right: 12px;
+  background-color:rgba(255,102,102,0.25);
+  font-weight: 700;
+}
+
+#facebox .close {
+  position: absolute;
+  bottom: 48px;
+  right: 72px;
+  color:rgb(0,0,0);
+  font-weight: 700;
+}
+#facebox .close img {
+  display:none;
+}
+#facebox .close:after {
+  content:"close";
+  border-bottom: 2px solid rgb(0,0,0);
+  
+}
+
+#ui-datepicker-div {
+  display:none;
+}
+#ui-datepicker-div a.ui-datepicker-prev,
+#ui-datepicker-div a.ui-datepicker-next  {
+  font: 700 12px/1.5 futura-pt,sans-serif;
+  border-bottom: 2px solid rgb(0,0,0);
+  margin-bottom: 24px;
+  color: rgb(0,0,0);
+}
+#ui-datepicker-div a.ui-datepicker-prev {
+  float:left;
+  cursor:w-resize;
+}
+#ui-datepicker-div a.ui-datepicker-next {
+  float: right;
+  cursor:e-resize;
+}
+
+#ui-datepicker-div .ui-datepicker-title {
+  clear:both;
+}
+#ui-datepicker-div .ui-datepicker-title select {
+  margin-right: 12px;
+}
+
+#ui-datepicker-div {
+  background-color: rgb(255,255,255);
+  border: 20px solid rgb(255,102,102);
+  padding: 24px;
+  font: 700 12px/1.5 futura-pt,sans-serif;
+}
+
+#ui-datepicker-div:after {
+  content:"";
+  position:relative;
+  border: 20px solid transparent;
+  border-top-color: rgb(255,102,102);
+  bottom: -80px;
+  left: -24px;
+}
+#ui-datepicker-div table td {
+  padding: 6px;
+}
+#ui-datepicker-div table td a {
+  color: rgba(0,0,0,0.75);
+  font: 400 12px/1.5 futura-pt,sans-serif;
+}
+
+footer {
+  background: url(/images/footerBottomBg.png) repeat-x 0 top; 
+  padding-top:31px;
+  margin-top: 36px;
+}
+.footerContainer {
+  background: url(/images/tile1.gif) repeat 0 0;
+  padding: 36px 0;
+}
+.footerContainer small {
+  float:right;
+  color:rgb(0,0,0);
+  font-size: 12px;
+  font-weight: 300;
+  padding:0 12px;
+}
+.footerContainer small a {
+  color:inherit;
+  border-bottom: 1px solid rgb(0,0,0);
+}

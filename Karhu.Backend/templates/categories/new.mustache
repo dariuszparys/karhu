@@ -1,0 +1,16 @@
+<form class="newForm" method="POST" action="#/categories">
+  <p>
+    <label for="category_name">{{?name}}</label>
+    <input type="text" name="category[name]" id="category_name" class="text store_change" value="{{name}}" />
+  </p>
+
+  <p>
+    <label for="category_description">{{?description}}</label>
+    <textarea name="category[description]" id="category_description" class="store_change">{{description}}</textarea>
+  </p>
+  
+  <p>
+    <input type="submit" value="{{?add_category}}" class="underline" data-key="enter" data-ctrl-key="true" />
+    <input type="submit" value="{{?cancel}}" class="cancel" data-key="esc" />
+  </p>
+</form>

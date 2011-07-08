@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{569C78DD-0C14-40A8-8358-FF89DF349E44}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Karhu.Backend</RootNamespace>
+    <AssemblyName>Karhu.Backend</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\KarhuBaseController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="karhuContext.cs" />
+    <Compile Include="Mapping\CategoryMap.cs" />
+    <Compile Include="Mapping\ProductMap.cs" />
+    <Compile Include="Models\CategoryData.cs" />
+    <Compile Include="Models\PaginatedData.cs" />
+    <Compile Include="Models\ProductData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\jquery.facebox.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\screen.css" />
+    <Content Include="config.js" />
+    <Content Include="Global.asax" />
+    <Content Include="images\closelabel.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\footerBottomBg.png" />
+    <Content Include="images\headerBottomBg.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\shadow.gif" />
+    <Content Include="images\tile1.gif" />
+    <Content Include="images\tile2.gif" />
+    <Content Include="images\ui-bg_glass_55_fcf0ba_1x400.png" />
+    <Content Include="images\ui-bg_gloss-wave_100_ece8da_500x100.png" />
+    <Content Include="images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <Content Include="images\ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <Content Include="images\ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <Content Include="images\ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <Content Include="images\ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <Content Include="images\ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <Content Include="images\ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <Content Include="images\ui-icons_808080_256x240.png" />
+    <Content Include="images\ui-icons_847e71_256x240.png" />
+    <Content Include="images\ui-icons_8dc262_256x240.png" />
+    <Content Include="images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="images\ui-icons_ffffff_256x240.png" />
+    <Content Include="index.html" />
+    <Content Include="js\app.js" />
+    <Content Include="js\controllers\cached_actions.js" />
+    <Content Include="js\controllers\categories.js" />
+    <Content Include="js\controllers\locales.js" />
+    <Content Include="js\controllers\pages.js" />
+    <Content Include="js\controllers\products.js" />
+    <Content Include="js\controllers\session.js" />
+    <Content Include="js\helpers\access_last_item_helper.js" />
+    <Content Include="js\helpers\application_helper.js" />
+    <Content Include="js\helpers\app_filter_helper.js" />
+    <Content Include="js\helpers\cache_helper.js" />
+    <Content Include="js\helpers\custom_validators_helper.js" />
+    <Content Include="js\helpers\keyboard_helper.js" />
+    <Content Include="js\helpers\offline_helper.js" />
+    <Content Include="js\helpers\sort_helper.js" />
+    <Content Include="js\models\backend.js" />
+    <Content Include="js\models\base.js" />
+    <Content Include="js\models\cached_lists.js" />
+    <Content Include="js\models\category.js" />
+    <Content Include="js\models\i18n.js" />
+    <Content Include="js\models\product.js" />
+    <Content Include="js\models\session_validations.js" />
+    <Content Include="js\root.js" />
+    <Content Include="js\views\edit_category.js" />
+    <Content Include="js\views\edit_product.js" />
+    <Content Include="js\views\queue.js" />
+    <Content Include="locales\de.js" />
+    <Content Include="locales\en.js" />
+    <Content Include="todo.html" />
+    <Content Include="vendor\date\date.js" />
+    <Content Include="vendor\jquery\jquery.autoresize.js" />
+    <Content Include="vendor\jquery\jquery.facebox.js" />
+    <Content Include="vendor\jquery\jquery.global.de.js" />
+    <Content Include="vendor\jquery\jquery.global.js" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.ui.datepicker.de.js" />
+    <Content Include="vendor\jquery\jquery.ui.datepicker.en.js" />
+    <Content Include="vendor\jquery\jquery.ui.js" />
+    <Content Include="vendor\jquery\jquery.validate.de.js" />
+    <Content Include="vendor\jquery\jquery.validate.js" />
+    <Content Include="vendor\lab\lab.js" />
+    <Content Include="vendor\sammy\sammy.js" />
+    <Content Include="vendor\sammy\sammy.json.js" />
+    <Content Include="vendor\sammy\sammy.mustache.js" />
+    <Content Include="vendor\sammy\sammy.nested_params.js" />
+    <Content Include="vendor\sammy\sammy.storage.js" />
+    <Content Include="vendor\sha256\sha256.js" />
+    <Content Include="vendor\underscore\underscore.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".DS_Store" />
+    <None Include="templates\cached_actions\index.mustache" />
+    <None Include="templates\categories\add.mustache" />
+    <None Include="templates\categories\edit.mustache" />
+    <None Include="templates\categories\index.mustache" />
+    <None Include="templates\categories\new.mustache" />
+    <None Include="templates\pages\keyboard_shortcuts.mustache" />
+    <None Include="templates\products\add.mustache" />
+    <None Include="templates\products\edit.mustache" />
+    <None Include="templates\products\index.mustache" />
+    <None Include="templates\products\new.mustache" />
+    <None Include="templates\session\new.mustache" />
+    <None Include="templates\shared\pagination_link.mustache" />
+    <None Include="vendor\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1972</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
