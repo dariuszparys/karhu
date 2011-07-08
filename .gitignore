@@ -12,6 +12,7 @@ last_requests.log
  *.cache
  *.suo
  
+ 
 # Include dlls if they’re in the NuGet packages directory
  !/packages/*/lib/*.dll
  

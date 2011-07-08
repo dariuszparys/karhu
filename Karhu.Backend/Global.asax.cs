@@ -22,6 +22,18 @@ namespace Karhu.Backend
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "CategoriesRoute",
+                "categories/{id}",
+                new { controller = "Categories", action = "Index", id = UrlParameter.Optional }
+                );
+
+            routes.MapRoute(
+                "ProductsRoute",
+                "products/{id}",
+                new { controller = "Products", action = "Index", id = UrlParameter.Optional }
+                );
+
+            routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
