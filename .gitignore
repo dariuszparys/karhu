@@ -22,9 +22,9 @@ last_requests.log
  
 # Directories #
  ###############
- bin/
- obj/
- TestResults/
+ Karhu.Backend/bin/
+ Karhu.Backend/obj/
+ Karhu.Backend/TestResults/
  
 # Web publish log #
  ###################
